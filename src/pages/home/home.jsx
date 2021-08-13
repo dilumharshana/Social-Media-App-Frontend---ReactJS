@@ -9,7 +9,7 @@ import { RightBar } from "../../components/rightbar/rightbar";
 export const Home = (props) => {
   return (
     <>
-      <Grid container>
+      <Grid container spacing={2}>
         <Grid item lg={3}>
           <SideBar />
         </Grid>

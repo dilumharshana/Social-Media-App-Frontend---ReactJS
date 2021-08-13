@@ -13,7 +13,7 @@ const NavBar = (props) => {
     <>
       <AppBar>
         <Toolbar>
-          <Grid container spacing={3} alignItems="center">
+          <Grid container alignItems="center">
             <BrandName />
             <Searchbar />
             <TopLinks />
