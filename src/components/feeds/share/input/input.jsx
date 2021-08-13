@@ -3,12 +3,12 @@ import profile from "../../../../assests/profile/profile.png";
 
 export const Input = () => {
   return (
-    <Box display="flex" p={2} alignItems="center">
-      <Box>
+    <Box display="flex" alignItems="center" pl={2} pt={2}>
+      <Box >
         <Avatar src={profile} />
       </Box>
-      <Box ml={2}>
-        <InputBase placeholder="whats on your mind .." />
+      <Box ml={3}>
+        <InputBase placeholder="Whats on your mind .." />
       </Box>
     </Box>
   );

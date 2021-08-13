@@ -6,12 +6,15 @@ export const styles = () => {
       color: "grey",
       fontSize: "16px",
     },
+    mediaBox: {
+      cursor: "pointer",
+    },
     button: {
-      backgroundColor: "green",
+      backgroundColor: "#32c215",
       color: "white",
       fontFamily: "arial",
-      "&:hoer": {
-        backgroundColor: "green",
+      "&:hover": {
+        backgroundColor: "#1ea603",
       },
     },
   });

@@ -20,6 +20,9 @@ export const Share = (props) => {
             spacing={2}
           >
             <Input />
+            <center>
+              <hr style={{ width: "90%" }} />
+            </center>
             <Media />
           </Paper>
         </Box>
