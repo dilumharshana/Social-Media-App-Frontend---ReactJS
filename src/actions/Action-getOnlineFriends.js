@@ -6,13 +6,13 @@ export const getOnlineFriends = () => {
     payload: [
       {
         src: "img 1",
-        name: "kasun",
+        name: "Ashan Silve",
       },
-      { src: "img 2", name: "prasanna" },
-      { src: "img 2", name: "prasanna" },
-      { src: "img 2", name: "prasanna" },
-      { src: "img 2", name: "prasanna" },
-      { src: "img 2", name: "prasanna" },
+      { src: "img 2", name: "Kasun Rathnayaka" },
+      { src: "img 2", name: "John Wick" },
+      { src: "img 2", name: "Alex Petrson" },
+      { src: "img 2", name: "Dilum Harshana" },
+      { src: "img 2", name: "Eminem" },
     ],
   };
 };
