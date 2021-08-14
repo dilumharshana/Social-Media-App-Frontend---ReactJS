@@ -8,7 +8,7 @@ import { getOnlineFriends } from "../../../actions/Action-getOnlineFriends";
 
 import { styles, StyledBadge } from "./styles";
 
-const OnlineFriends = (props) => {
+export const OnlineFriends = (props) => {
   const useStyles = styles();
   const classes = useStyles();
 
@@ -49,5 +49,3 @@ const OnlineFriends = (props) => {
     </Grid>
   );
 };
-
-export default OnlineFriends;

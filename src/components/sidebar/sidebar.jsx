@@ -1,5 +1,5 @@
 import { Tools } from "./tools/tools";
-import OnlineFriends from "./onlineFriends/onlineFriends";
+import { OnlineFriends } from "./onlineFriends/onlineFriends";
 
 import "./styles.css";
 

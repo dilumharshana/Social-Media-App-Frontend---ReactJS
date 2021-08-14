@@ -3,20 +3,24 @@ import { Grid } from "@material-ui/core";
 
 //components
 import { SideBar } from "../../components/sidebar/sidebar";
-import { Feed } from "../../components/feeds/feed.jsx";
+import { Feed } from "../../components/feeds/feed";
+import { LoadPages } from "../../components/pages/loadpages";
 import { RightBar } from "../../components/rightbar/rightbar";
 
 export const Home = (props) => {
   return (
     <>
       <Grid container>
-        <Grid item lg={3}>
+        <Grid item lg={3} xl={3}>
           <SideBar />
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={4} xl={5}>
+        <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
           <Feed />
         </Grid>
-        <Grid item lg={4}>
+        <Grid lg={2} xl={2}>
+          <LoadPages />
+        </Grid>
+        <Grid item lg={3} xl={3}>
           <RightBar />
         </Grid>
       </Grid>
