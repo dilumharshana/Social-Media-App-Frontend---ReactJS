@@ -58,17 +58,14 @@ export const Tools = (props) => {
 
       {/* //show more button */}
 
-      <Box display="flex" m={3}>
-        <Button variant="filled" onClick={() => heightController()}>
-          {" "}
+      <Box display="flex" ml={10} mt={2} mb={3}>
+        <Button
+          variant="content"
+          onClick={() => heightController()}
+          className={classes.showMoreBtn}
+        >
           {heightis == defaultHeight ? "Show more ..." : "Show less ..."}
         </Button>
-      </Box>
-
-      {/* hr line*/}
-      <Box pl={5} mb={2}>
-        <hr className={classes.hr} />
-        <Box className={classes.activeFriends}>Active friends</Box>
       </Box>
     </>
   );

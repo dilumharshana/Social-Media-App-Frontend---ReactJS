@@ -11,6 +11,7 @@ export const styles = () => {
     },
     button: {
       backgroundColor: "#32c215",
+      marginLeft: "auto",
       color: "white",
       fontFamily: "arial",
       "&:hover": {

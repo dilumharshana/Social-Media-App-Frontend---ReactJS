@@ -17,7 +17,6 @@ export const Media = () => {
       {/* media icons */}
 
       <Box
-        mr={2}
         display="flex"
         alignItems="center"
         className={classes.mediaBox}
@@ -26,18 +25,7 @@ export const Media = () => {
         <Box mr={1}>
           <PhotoSizeSelectActualIcon style={{ color: "#e03f3f" }} />
         </Box>
-        <Box className={classes.mediaNames}>Photo or video</Box>
-      </Box>
-      <Box
-        mr={2}
-        display="flex"
-        alignItems="center"
-        className={classes.mediaBox}
-      >
-        <Box mr={1}>
-          <LabelIcon style={{ color: "#523fe0" }} />
-        </Box>
-        <Box className={classes.mediaNames}>Tag</Box>
+        <Box className={classes.mediaNames}>Favourites</Box>
       </Box>
       <Box
         mr={2}
@@ -64,11 +52,11 @@ export const Media = () => {
 
       {/* Share button */}
 
-      <Box ml={6}>
+      <Box ml={4} mr={2}>
         <Button
           size="medium"
           className={classes.button}
-          variant="contained"
+          variant="text"
           endIcon={<FavoriteIcon variant="outlined" />}
         >
           Share
