@@ -22,7 +22,7 @@ export const Feed = (props) => {
 
   useEffect(() => {
     settimeline();
-  });
+  }, []);
   return (
     <div style={{ height: window.innerHeight, overflowY: "scroll" }}>
       <Grid container justifyContent="center">

@@ -1,20 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
 //components
-import Navbar from "./components/navbar/navbar";
+import { Login } from "./pages/login/login";
 import { Home } from "./pages/home/home";
 
 ReactDOM.render(
   <>
     <Provider store={store}>
       <App>
-        <Navbar />
-        <Home />
+        <Router>
+          <Switch>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
       </App>
     </Provider>
   </>,

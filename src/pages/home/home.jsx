@@ -2,6 +2,7 @@ import style from "./styles.css";
 import { Grid } from "@material-ui/core";
 
 //components
+import Navbar from "../../components/navbar/navbar";
 import { SideBar } from "../../components/sidebar/sidebar";
 import { Feed } from "../../components/feeds/feed";
 import { LoadPages } from "../../components/pages/loadpages";
@@ -11,6 +12,9 @@ export const Home = (props) => {
   return (
     <>
       <Grid container>
+        <Grid>
+          <Navbar />
+        </Grid>
         <Grid item lg={3} xl={3}>
           <SideBar />
         </Grid>
