@@ -25,8 +25,8 @@ export const Posts = (props) => {
   const classes = useStyles();
 
   return (
-    <Box mb={4}>
-      <Card className={classes.root} elevation={5}>
+    <Box mb={3}>
+      <Card className={classes.root} elevation={5} key={props.post.id}>
         {/* card header */}
 
         <Box display="flex" alignItems="center" p={2}>
@@ -34,10 +34,10 @@ export const Posts = (props) => {
             <Avatar src={wick} />
           </Box>
           <Box className={classes.userName} ml={1}>
-            John Wick
+            {props.post.name}
           </Box>
           <Box className={classes.action} ml={1}>
-            updated his profile picture
+            {props.post.action}
           </Box>
           <Box className={classes.optionBtn}>
             <IconButton>
@@ -46,10 +46,14 @@ export const Posts = (props) => {
           </Box>
         </Box>
 
-        <Box p={2}>I'll come to you</Box>
+        <Box p={2}>{props.post.desc}</Box>
 
         {/* media */}
-        <CardMedia image={wick} className={classes.media} title="any ware" />
+        <CardMedia
+          image={props.post.image}
+          className={classes.media}
+          title="any ware"
+        />
 
         {/* card action */}
         <CardActions disableSpacing>
@@ -65,13 +69,15 @@ export const Posts = (props) => {
               />
             )}
           </IconButton>
+          <Box className={classes.likes} mr={2}>
+            {liked ? `You and ${props.post.likes} others` : props.post.likes}
+          </Box>
           <IconButton className={classes.comments}>
             <Box>
               {`2K `}
               <InsertCommentIcon />
             </Box>
           </IconButton>
-
           <Box className={classes.share} pr={2}>
             <IconButton>
               <ShareIcon />

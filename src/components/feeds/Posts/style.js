@@ -9,6 +9,9 @@ export const styles = () =>
       height: 0,
       paddingTop: "66%",
     },
+    likes: {
+      fontSize: "12px",
+    },
     comments: {
       fontSize: "15px",
     },

@@ -12,10 +12,12 @@ export const OnlineFriends = (props) => {
   const useStyles = styles();
   const classes = useStyles();
 
-  const onlineFriends = useSelector((store) => store.onlineFriends);
+  //binding action
   const dispatch = useDispatch();
-
   const loadOnlineFriends = bindActionCreators(getOnlineFriends, dispatch);
+
+  //getting state
+  const onlineFriends = useSelector((store) => store.onlineFriends);
 
   useEffect(() => {
     loadOnlineFriends();
@@ -29,7 +31,7 @@ export const OnlineFriends = (props) => {
         {onlineFriends.map((friend) => (
           <li>
             <Box display="flex" alignItems="center">
-              <Box p={1} pr={2}>
+              <Box p={1}>
                 <StyledBadge
                   overlap="circle"
                   variant="dot"
