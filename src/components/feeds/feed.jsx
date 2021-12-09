@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { bindActionCreators } from "redux";
 import { useSelector, useDispatch } from "react-redux";
 import { Grid } from "@material-ui/core";
-import { Component } from "react";
 import "./style.css";
 
 //actions

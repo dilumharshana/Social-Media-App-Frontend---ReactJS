@@ -1,5 +1,5 @@
 import style from "./styles.css";
-import { Grid } from "@material-ui/core";
+import { Grid, Toolbar } from "@material-ui/core";
 
 //components
 import Navbar from "../../components/navbar/navbar";
@@ -16,15 +16,20 @@ export const Home = (props) => {
           <Navbar />
         </Grid>
         <Grid item lg={3} xl={3}>
+          <Toolbar />
           <SideBar />
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+          <Toolbar />
+
           <Feed />
         </Grid>
         <Grid lg={2} xl={2}>
+          <Toolbar />
           <LoadPages />
         </Grid>
         <Grid item lg={3} xl={3}>
+          <Toolbar />
           <RightBar />
         </Grid>
       </Grid>

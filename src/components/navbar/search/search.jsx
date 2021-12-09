@@ -26,7 +26,6 @@ export const Searchbar = (props) => {
     >
       <div>
         <TextField
-          fullWidth
           size="small"
           variant="outlined"
           placeholder="Search for Friends..."

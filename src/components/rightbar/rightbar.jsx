@@ -5,13 +5,15 @@ import { OnlineFriends } from "../sidebar/onlineFriends/onlineFriends";
 export const RightBar = (props) => {
   return (
     <>
-      <Grid container justifyContent="center">
-        <Grid item>
-          <Adds />
+      <Box mt={3}>
+        <Grid container justifyContent="center">
+          <Grid item>
+            <Adds />
+          </Grid>
         </Grid>
-      </Grid>
-      <Box p={3}>
-        <OnlineFriends />
+        <Box p={3}>
+          <OnlineFriends />
+        </Box>
       </Box>
     </>
   );
